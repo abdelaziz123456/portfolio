@@ -4,11 +4,15 @@ let nav=document.querySelector('nav');
 let changedText=document.querySelectorAll('.change-text');
 let contactDiv=document.querySelector('.contact-div');
 let toggleIcon=document.querySelector('#toggle');
-let modeDesc=document.querySelector('.mode-desc')
+let modeDesc=document.querySelector('.mode-desc');
+let blackedText=document.getElementById('blacked-text')
+
 
 function darkMode(){
     nav.classList.toggle("navbar-dark")
     nav.classList.toggle("bg-dark")
+
+    blackedText.classList.toggle('font-white')
    for(let elem of changedText ){
     elem.classList.toggle("font-color-purple")
 
