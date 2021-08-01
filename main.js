@@ -17,9 +17,9 @@ function darkMode(){
 bod.classList.toggle("dark-mode");
 toggleIcon.classList.toggle('fa-toggle-on')
 if(toggleIcon.classList.contains('fa-toggle-on')){
-    modeDesc.textContent='dark'
+    modeDesc.innerHTML='<i class="fas fa-moon fa-lg"></i>'
 }else{
-    modeDesc.textContent='Light'
+    modeDesc.innerHTML='<i class="fas fa-sun fa-lg"></i>'
 }
 
 }
