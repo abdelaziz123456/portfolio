@@ -1,0 +1,409 @@
+@import url(./fonts.css);
+
+
+@import url(./partials/_variables.css);
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*navigation start*/
+
+.fa-toggle-off{
+    color: #663097
+}
+.header_area .main-menu .navbar .navbar-brand{
+   padding:0 2rem 0 2rem  
+}
+
+
+.header_area .main-menu .navbar{
+    padding:1rem 4rem;
+    
+}
+.navbar-nav{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
+    
+
+}
+
+
+.header_area .main-menu .nav-item .nav-link{
+    font:normal 600 18px/2px var(--roboto) ;
+    
+    text-transform: uppercase;
+    
+    padding: .7rem;
+    
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.header_area .main-menu .navbar-nav  a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/*navigation end*/
+
+
+/*banner start*/
+.site-main .site-banner{
+   
+}
+.site-main .site-banner .site-title h3{
+    padding-top:25%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content:"";
+    height:2px;
+    width:18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    
+}
+
+.site-main .site-banner .site-title h1{
+    font-size:3rem ;
+}
+.site-main .site-banner .site-title h4{
+    font-size: 1.4rem;
+}
+
+.site-main .site-banner .banner-image >img{
+    padding:7rem 0;
+    width:90rem;
+    
+}
+
+.title-text{
+    font:normal bold 50px/72px var(--roboto)
+}
+
+.button{
+  padding: .8rem 2rem;
+  font:normal 500 16px/20px var(--roboto);
+  position:relative;
+  box-sizing: border-box;
+  
+}
+
+.button.primary-button{
+    background: var(--gradient-color);
+   
+    color: whitesmoke;
+    
+    box-shadow: var(--box-shadow);
+    animation-name: move_out;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+
+}
+.button.primary-button:hover{
+    animation-name: move_in;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*banner end*/
+
+
+
+
+/*About start*/
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+
+}
+
+.site-main .about-area .about-title h2>span{
+display: block;
+color:#733197 ;
+font:normal bold 49px/60px var(--roboto);
+letter-spacing: 15px;
+}
+
+
+.site-main .about-area .about-title  .paragraph>p{
+
+}
+
+p.para{
+color:var(--text-color);
+font:normal
+}
+
+
+
+
+/*About end*/
+
+
+
+
+
+/*skills start*/
+.skills{
+    
+    
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+.skills-main{
+margin: auto;
+max-width:80rem;
+
+}
+
+.skill-title{
+    letter-spacing: 4px;
+    color:#733197 ;
+    margin-bottom: 100px;
+   
+   
+}
+
+.skills-items{
+    background: var(--gradient-color);
+   
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.skills-item{
+
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(255,255,255,.05);
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    animation-name: move_out;
+    animation-duration: .3s;
+    animation-fill-mode:forwards
+}
+
+
+.skills-item:hover{
+    cursor: pointer;
+    animation-name: move_in;
+    animation-duration: .25s;
+    animation-fill-mode:forwards
+
+    
+    
+}
+
+@keyframes  move_in{
+    from{
+    position: relative;
+    top:0px
+    }
+    to{
+   position: relative;
+   top:-10px
+    }
+}
+@keyframes  move_out{
+    
+    from{
+   position: relative;
+   top:-10px
+    }
+    to{
+        position: relative;
+        top:0px
+        }
+}
+/*skills end*/
+
+
+
+
+/*projects start*/
+.projects-main{
+    margin-top: 10rem ;
+}
+
+.pro-img{
+    height: 30vh;
+   min-width: 20vw;
+    border-radius: 10px;
+}
+
+.desc-div {
+    height: 20vh;
+}
+
+
+.code-btn{
+    background:whitesmoke;
+    font-weight: bold;
+    color:#733197;
+    box-shadow: var(--box-shadow);
+   
+    
+    border-radius: 5px;
+    animation-name: move_out;
+    animation-duration: .25s;
+    animation-fill-mode:forwards ;
+    
+    
+}
+.code-btn:hover{
+    color: #733197;
+    animation-name: move_in;
+    animation-duration: .25s;
+    animation-fill-mode:forwards ;
+}
+
+
+
+.project-item{
+    
+
+        text-align: center;
+        color: whitesmoke;
+        background-color: rgba(255,255,255,.05);
+        box-sizing: border-box;
+        border-radius: 20px;
+        box-shadow: var(--box-shadow);
+        
+  
+}
+
+
+
+/*projects end*/
+
+
+
+
+/*contact start*/
+
+
+.contact-title{
+    color: #733197 ;
+    letter-spacing: 5px;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+}
+
+.input-div{
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
+  
+    background: var(--gradient-color);
+    color:whitesmoke;
+    
+}
+#spec-btn,.spec-btn{
+    background: whitesmoke;
+    color:#362A98;
+    font-weight: 700;
+}
+
+.form-control:not(.spec-btn),.form-control:focus{
+    margin-bottom: 20px;
+    
+    background-color: transparent;
+    border-radius: 0%;
+    border:none;
+    border-bottom: 1px solid white;
+    outline:0 none;
+    color:whitesmoke ;
+
+}
+
+.contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contact-main{
+    box-shadow: var(--box-shadow);
+    max-width: 60rem;
+    margin-bottom: 80px;
+    
+  
+
+}
+
+.contact-div{
+    border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+   padding: 1rem 3rem;
+   
+   
+}
+@media (max-width:550px) {
+    .contact-div{
+
+        padding: 1rem .5rem;
+       
+    }
+    
+   
+}
+
+.contact-div h4{
+    padding-bottom: 10px;
+    
+}
+.contact-div .lead{
+font-size: .9rem;
+}
+
+.contact-div .github{
+    color: black;
+}
+.github:hover{
+    color:rgba(0,0,0,.8)
+}
+.github .fab{
+    animation-name: move_out;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+.contact-div .fab:hover{
+    animation-name: move_in;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+/*contact end*/
+
+.dark-mode{
+    background: rgba(0, 0, 0, 0.878);
+}
+.white-mode{
+    background: rgb(250, 250, 250);
+}
+
+.font-color-purple{
+    color:#733197;
+   
+}
