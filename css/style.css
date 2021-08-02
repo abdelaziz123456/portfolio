@@ -345,6 +345,10 @@ max-width:80rem;
     color:#362A98;
     font-weight: 700;
 }
+.form-control:focus,.form-control:active{
+outline:none !important;
+box-shadow: none;
+}
 
 .form-control:not(.spec-btn),.form-control:focus{
     margin-bottom: 20px;
@@ -431,3 +435,4 @@ font-size: .9rem;
     color:#733197;
    
 }
+
