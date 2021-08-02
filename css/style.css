@@ -172,6 +172,42 @@ color:var(--text-color);
 font:normal
 }
 
+.education{
+    background: linear-gradient(to bottom right, #733197 0%, #322A98 100%);;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.605);
+    margin-bottom: 8rem;
+}
+
+.education .exp{
+    border-left: 3px solid #342A98;
+    padding:0
+}
+.education .exp ul{
+    color:white;
+    font-size: 2rem;
+    list-style: square outside;
+    padding:27px;
+    
+    
+}
+
+.education .exp span{
+    
+    color:white;
+    font-size: 1rem;
+    position: relative;
+    top:-7px
+    
+}
+.education .exp li{
+    margin-bottom: 2rem;
+    line-height: 1rem;
+    position: relative;
+    top:-35px
+    
+}
 
 
 
