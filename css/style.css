@@ -191,6 +191,7 @@ font:normal
     border-radius: 10px;
     box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.605);
     margin-bottom: 8rem;
+    max-width: 1000px;
 }
 
 .education .exp{
@@ -238,11 +239,14 @@ font:normal
     flex-flow:column wrap;
     justify-content: center;
     align-items: center;
-   
+   max-width: 1000px;
 }
 .skills-main{
 margin: auto;
 max-width:80rem;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
@@ -313,13 +317,27 @@ max-width:80rem;
 
 
 /*projects start*/
+
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+
+}
 .projects-main{
     margin-top: 10rem ;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow:column wrap;
+
 }
 
 .pro-img{
     height: 30vh;
-   min-width: 20vw;
+   min-width: 12vw;
     border-radius: 10px;
 }
 
